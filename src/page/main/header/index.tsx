@@ -16,7 +16,7 @@ export const Header: React.FC<{}> = (props) => {
             </NavItem>
             <NavItem>
               <NavButton>
-                <NavLink to="/project"><Typography variant='h6' >Project</Typography></NavLink>
+                <NavLink to="/technical-exercises"><Typography variant='h6' >Technical Exercises</Typography></NavLink>
               </NavButton>
             </NavItem>
             <NavItem>

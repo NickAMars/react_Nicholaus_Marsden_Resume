@@ -14,14 +14,12 @@ export const ContactInfo : React.FC<{}> = (props) => {
         </GroupContentStyle>
         <GroupContentStyle>
             <LabelStyle>Job:</LabelStyle>
-            <ParagraphStyle>Full Stack Engineer</ParagraphStyle>
+            <ParagraphStyle>Senior Full Stack Engineer</ParagraphStyle>
             <ParagraphStyle>Senior Software Engineer</ParagraphStyle>
-            <ParagraphStyle>Software Engineer</ParagraphStyle>
-            <ParagraphStyle>Full Stack Developer</ParagraphStyle>
         </GroupContentStyle>
         <GroupContentStyle>
             <LabelStyle>E-mail:</LabelStyle>
-            <ParagraphStyle>nicholausa.marsden@gmail.com</ParagraphStyle>
+            <ParagraphStyle>Nicholausmarsden.career1@gmail.com</ParagraphStyle>
         </GroupContentStyle>
     </ContactInfoContainer>
   )

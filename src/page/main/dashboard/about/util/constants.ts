@@ -1,6 +1,7 @@
 export const PRIMARY_SKILLS = [
     {subject:"JavaScript", rank: 5},
     {subject:"TypeScript", rank: 5},
+    {subject:"Angular", rank: 5},
     {subject:"ReactJS", rank: 5},
     {subject:"NodeJS", rank: 5},
     {subject:"Express", rank: 5},
@@ -11,23 +12,13 @@ export const PRIMARY_SKILLS = [
     {subject:"Jest", rank: 5},
     {subject:"HTML", rank: 5}, 
     {subject:"CSS", rank: 5},
+    {subject:"Java", rank: 4}, 
+    {subject:"Spring Boot", rank: 4},
     {subject:"AWS", rank: 4},
     {subject:"Docker", rank: 3},
     {subject:"Kubernetes", rank: 3},
-    {subject:"Angular", rank: 3},
-    {subject:"Java", rank: 3}, 
-    {subject:"Spring Boot", rank: 3},
     {subject:"Microsoft Azure", rank: 3}
 ]
-
-// export const SECONDARY_SKILLS = [
-//     {subject:"Java", rank: 3.5}, 
-//     {subject:"Angular", rank: 3.5}, 
-//     {subject:"Spring Boot", rank: 3.5},
-//     {subject:"Junit", rank: 3.5 },
-//     {subject:"Microsoft Azure", rank: 3},
-//     {subject:"Python", rank: 3}, 
-// ]
 
 export const educations = [
     {

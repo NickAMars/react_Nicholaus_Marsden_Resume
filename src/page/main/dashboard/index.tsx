@@ -32,7 +32,7 @@ export const Dashboard: React.FC<{}> = (props) => {
           <Routes>
             <Route path="/" element={ <About /> } />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/project" element={<Project />} />
+            <Route path="/technical-exercises" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
             <Route
                 path="*"

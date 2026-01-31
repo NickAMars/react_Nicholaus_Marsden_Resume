@@ -1,6 +1,6 @@
 import React from 'react'
 import { TimelineConnector, TimelineContent, TimelineSeparator } from '@mui/lab'
-import { Description, DotLineConnector, DotStyle, ImageItem, LaptopIcon, TimelineContainer, TimelineContentStyle, TimelineItemStyle } from './AboutTimeLine.style';
+import { Description, DotLineConnector, DotStyle, ImageItem, LaptopIcon, TimelineContainer, TimelineContentStyle, TimelineItemStyle, LinkedIn } from './AboutTimeLine.style';
 
 export const TimeLine: React.FC<{}> = (props) => {
   return (
@@ -26,14 +26,14 @@ export const TimeLine: React.FC<{}> = (props) => {
           <DotStyle variant="outlined" color="primary" />
           <DotLineConnector />
         </TimelineSeparator>
-        <TimelineContentStyle><Description variant="subtitle1" ><b>Job:</b> Software Engineer</Description></TimelineContentStyle>
+        <TimelineContentStyle><Description variant="subtitle1" ><b>Job:</b> Senior Software Engineer</Description></TimelineContentStyle>
       </TimelineItemStyle>
       <TimelineItemStyle>
         <TimelineSeparator>
           <DotStyle variant="outlined" color="primary" />
           <DotLineConnector />
         </TimelineSeparator>
-        <TimelineContentStyle><Description variant="subtitle1" ><b>Email:</b> nicholausa.marsden@gmail.com</Description></TimelineContentStyle>
+        <TimelineContentStyle><Description variant="subtitle1" ><b>Email:</b>Nicholausmarsden.career1@gmail.com</Description></TimelineContentStyle>
       </TimelineItemStyle>
       <TimelineItemStyle>
         <TimelineSeparator>
@@ -42,7 +42,7 @@ export const TimeLine: React.FC<{}> = (props) => {
         <TimelineContentStyle>
           <Description variant="subtitle1" ><b>LinkedIn</b>: 
             <a href='https://www.linkedin.com/in/nicholausmarsden' target="_black">
-              nicholausmarsden
+              <LinkedIn/>
             </a>
           </Description>
         </TimelineContentStyle>

@@ -2,6 +2,8 @@ import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import { styled } from 'styled-components'
 import { Typography } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 const TimelineContainer = styled(Timeline)`
   width: 100%;
   margin-top: -5rem;
@@ -38,6 +40,11 @@ const DotStyle  = styled(TimelineDot)`
 const Description = styled(Typography)`
   font-size: 1.4rem;
 `;
+
+const LinkedIn = styled(LinkedInIcon)`
+  font-size: 2.5rem;
+  margin-bottom: -5px;
+`;
 export {
     TimelineContainer,
     TimelineItemStyle,
@@ -46,5 +53,6 @@ export {
     DotLineConnector,
     TimelineContentStyle,
     DotStyle,
-    Description
+    Description,
+    LinkedIn
 }

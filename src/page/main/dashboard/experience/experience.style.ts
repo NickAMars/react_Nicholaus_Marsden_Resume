@@ -17,6 +17,7 @@ const JobStyle = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
+    margin-bottom: 1.5rem;
 `
 const CompanyContainer = styled.div`
     display: flex;
@@ -30,9 +31,15 @@ const CompanyDetails = styled(Typography)`
         font-size: 1.4rem;
 `
 
-const CompanyDescription =styled.ul`
+const CompanyDescription =styled.div`
     padding: 0 2rem;
     font-size: 1.4rem;
+`;
+const BulletList =styled.ul`
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    list-style-type: none;
+
 `;
 const BulletPoint =styled.li`
 `;
@@ -46,4 +53,5 @@ export {
     CompanyDetails,
     CompanyDescription,
     BulletPoint,
+    BulletList
 }
