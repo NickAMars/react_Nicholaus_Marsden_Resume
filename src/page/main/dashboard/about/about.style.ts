@@ -30,12 +30,12 @@ const SkillContainer = styled.div`
     /* height: 13rem; */
 `
 const SkillStyle = styled.span`
-    display: flex;
-    width: 24rem;
-    padding-left: 1rem;
-    & > * {
-        flex: 1;
-    }
+    // display: flex;
+    // width: 20rem;
+    // padding-left: 1rem;
+    // & > * {
+    //     flex: 1;
+    // }
 `
 const SkillOutline = styled.div`
     padding: 0 .4rem;

@@ -18,8 +18,8 @@ export const Description: React.FC<{}> = (props) => {
                 <Title variant='h4'>Description:</Title>
                 <DescriptionStyle variant='h6'>
                     Software Engineer with 7 years of experience building and optimizing scalable web applications in Agile environments.
-                    Strong background in <b>JavaScript, TypeScript, React, and Node.js</b>, with experience leading projects, mentoring junior developers,
-                    and driving performance improvements.
+                    Strong background in <b>JavaScript, TypeScript, React, and Node.js</b>, 
+                    with experience leading projects, mentoring engineers, and improving application performance.
                 </DescriptionStyle>
             </DescriptionContainer>
 }

@@ -8,21 +8,22 @@ export const Technical: React.FC<{}> = (props) => {
 
     return<TechnicalContainer>
                 <Title variant='h4'>
-                    Technical Skill:
+                    Core Technologies:
                 </Title>
                 <SkillContainer>
                     <SkillOutline>
-                        <SubTitle variant='h6'>Primary Skills</SubTitle>
+                        {/* <SubTitle variant='h6'>Core Technologies:</SubTitle> */}
                         <SecondarySkillGroup>
-                            {PRIMARY_SKILLS.map(skill => (
+                            {PRIMARY_SKILLS.map((skill, index) => (
                                 <SkillStyle key={skill.subject}>
-                                    <SubjectStyle>{skill.subject} :</SubjectStyle>
-                                    <Rating name="half-rating-read" defaultValue={skill.rank} precision={0.5} readOnly />
+                                    {
+                                        index === PRIMARY_SKILLS.length -1 ? <SubjectStyle>{skill.subject} </SubjectStyle> : <SubjectStyle>{skill.subject},&nbsp;</SubjectStyle>
+                                    }
+                                    {/* <SubjectStyle>{skill.subject}, </SubjectStyle> */}
                                 </SkillStyle>
                             ))}
                         </SecondarySkillGroup>
                     </SkillOutline>
                 </SkillContainer>
-                {/* TypeScript, JavaScript, Java, HTML, CSS, React, Redux, Mobx.js, Angular 6, NGRX, Material UI, NodeJS, Express, Spring Boot, Restful API, Swagger, Kafka, Redis, Hibernate, NoSQL, SQL, Jest, Cypress, Junit, Docker, Kubernetes, AWS, Microsoft Azure  */}
             </TechnicalContainer>
 }
