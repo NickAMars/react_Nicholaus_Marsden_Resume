@@ -1,2 +1,12 @@
 node_modules/
 dist/
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/*.tfplan
+terraform/.terraform.lock.hcl
+
+# OS
+.DS_Store
