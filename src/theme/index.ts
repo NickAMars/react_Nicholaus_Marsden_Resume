@@ -19,25 +19,15 @@ declare module '@mui/material/Button' {
 }
 
 export const theme = createTheme({
-    // light: {
-    //     primary: '#FFAE42',
-    //     secondary: '#FFF',
-    //     tertiary: '#DDD'
-    // },
-    // dark: {
-    //     primary: '#006ECE',
-    //     secondary: '#000',
-    //     tertiary: '#333'
-    // },
     palette: {
         primary: {
-          main: '#FFAE42',
+          main: '#2563eb',
         },
         secondary: {
           main: '#FFF',
         },
         tertiary: {
-          main: '#1976d2', // blue
+          main: '#1e40af',
         },
     },
 })

@@ -27,6 +27,7 @@ const ImageItem = styled(TimelineItem)`
 `
 const LaptopIcon = styled(LaptopMacIcon)`
   font-size: 2.5rem;
+  color: #475569;
 `;
 
 const DotLineConnector = styled(TimelineConnector)`
@@ -39,11 +40,13 @@ const DotStyle  = styled(TimelineDot)`
 `
 const Description = styled(Typography)`
   font-size: 1.4rem;
+  color: #475569;
 `;
 
 const LinkedIn = styled(LinkedInIcon)`
   font-size: 2.5rem;
   margin-bottom: -5px;
+  color: #0077b5;
 `;
 export {
     TimelineContainer,

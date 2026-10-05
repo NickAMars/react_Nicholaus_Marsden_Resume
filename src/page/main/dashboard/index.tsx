@@ -9,15 +9,13 @@ import {
 
 
 const DashboardStyle = styled.main`
-  /* height: 80rem; */
-  border-radius: 5px;
-  margin-bottom: 5px;
+  border-radius: 10px;
   padding: 2px;
   background-color: ${(props)=> props.theme.palette.secondary.main};
   overflow-y: auto;
-
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   position: relative;
-  z-index:  100;
+  z-index: 100;
 `;
 
 const About = lazy(() => import('./about').then(module => ({ default: module.About})));
@@ -27,7 +25,7 @@ const Contact = lazy(() => import('./contact').then(module => ({ default: module
 
 export const Dashboard: React.FC<{}> = (props) => {
     return (
-      <DashboardStyle> 
+      <DashboardStyle>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={ <About /> } />

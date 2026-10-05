@@ -5,11 +5,11 @@ import styled, { keyframes } from "styled-components";
 
 const HeaderStyle = styled.nav`
     height: 7rem;
-    background-color:${(props)=> props.theme.palette.secondary.main};
-    margin-bottom: 5px;
+    background-color: ${(props)=> props.theme.palette.secondary.main};
     display: flex;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 `;
 
 const NavList = styled.ul`
@@ -29,7 +29,11 @@ const NavButton = styled(Button)`
   display: flex;
   align-items: center;
   height: inherit;
-  @media only screen and (max-width: 47em){ 
+  border-radius: 8px;
+  &:hover {
+    background-color: rgba(37, 99, 235, 0.06);
+  }
+  @media only screen and (max-width: 47em){
     width: 90px;
   }
 `
@@ -37,22 +41,28 @@ const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   align-self: stretch;
-  
   text-decoration: none;
   font-size: 1.2rem;
-  border-radius: 5px;
-  font-weight: 700;
-  color: #000;
-  transition: all .45s ease-Out;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #334155;
+  transition: color .3s ease;
   padding-left: 2rem;
   padding-right: 2rem;
+  &:hover {
+    color: ${(props)=> props.theme.palette.primary.main};
+  }
 `
 const HomeLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 8rem;
-  background-color: ${(props)=> props.theme.palette.primary.main};
+  background: linear-gradient(135deg, ${(props)=> props.theme.palette.primary.main}, #1e40af);
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: 0.9;
+  }
   @media only screen and (max-width: 47em){
     width: auto;
   }
