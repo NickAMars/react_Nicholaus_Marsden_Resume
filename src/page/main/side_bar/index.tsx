@@ -39,6 +39,11 @@ const SubText = styled(Typography)`
   color: #64748b;
 `;
 
+const DownloadLabel = styled(Typography)`
+  font-size: 1.5rem;
+  color: #FFF;
+`;
+
 const DownLoadButton = styled(Button)`
     width: 17rem;
     align-self: center;
@@ -81,7 +86,7 @@ export const SideBar: React.FC<{}> = (props) => {
           endIcon={<DownloadIcon />}
           onClick={handleDownload}
         >
-          <SubText>Download Cv</SubText>
+          <DownloadLabel>Download Cv</DownloadLabel>
         </DownLoadButton>
       </SideBarStyle>
     );
