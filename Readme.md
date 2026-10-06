@@ -1,35 +1,37 @@
-# Webpack React Typescript
+# Nicholaus Marsden Resume
 
-This project is to be used to get started with react typescrpt and JEST
+A personal resume website built with React, TypeScript, and Material UI, deployed to AWS S3 via Terraform and GitHub Actions.
 
-## Geting started
+## Getting Started
 
-```
-npm install <--- Install dependencies
-npm start <--- Run Development server
-npm build <--- Build Prodiction code
-npm  test <--- Test Project
-```
-
-## Used Plugins
-
-```
-babel (react, typescript)
-webpack-bundle-analyzer <--- analyzing js bundles
-fork-ts-checker-webpack-plugin <--- typechecking
-css (style-loader, css-loader, sass-loader) <--- CSS
-html (html-webpack-plugin)
-testing (jest, ts-jest, react-testing-library)
-hot reloading (react-refresh)
-
-React: ^18.2.0
-Webpack: ^5.89.0
+```bash
+npm install       # Install dependencies
+npm run dev       # Run development server
+npm run build     # Build production code
+npm run test      # Run tests
 ```
 
-### another way of adding the configuration to webpack before opening
-webpack serve --config webpack/webpack.prod.config.js --open
+## Tech Stack
 
-### for inline svg in react application
-https://www.npmjs.com/package/@svgr/webpack
+- **Frontend:** React 18, TypeScript, Material UI, Emotion, Leaflet
+- **Bundler:** Webpack 5, Babel
+- **Testing:** Jest, React Testing Library
+- **Infrastructure:** Terraform (AWS S3)
+- **CI/CD:** GitHub Actions
 
-Hi
+## Deployment
+
+Pushing to `master` triggers a GitHub Actions workflow that:
+
+1. Installs dependencies and builds the project
+2. Runs `terraform apply` to upload the build to S3
+
+## Project Structure
+
+```
+src/            # Application source code
+terraform/      # Terraform infrastructure config
+webpack/        # Webpack configuration
+public/         # Static assets
+.github/        # GitHub Actions workflows
+```
