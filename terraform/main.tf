@@ -7,6 +7,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    bucket = "nicholausamarsden.com"
+    key    = "terraform/terraform.tfstate"
+    region = "us-east-2"
+  }
 }
 
 provider "aws" {
@@ -55,19 +61,8 @@ locals {
   }
 }
 
-# Run npm build before uploading
-resource "terraform_data" "npm_build" {
-  triggers_replace = timestamp()
-
-  provisioner "local-exec" {
-    command     = "npm install && npm run build"
-    working_dir = "${path.module}/.."
-  }
-}
-
 # Upload all build files to the existing S3 bucket
 resource "aws_s3_object" "build_files" {
-  depends_on = [terraform_data.npm_build]
 
   for_each = fileset(var.build_dir, "**/*")
 
