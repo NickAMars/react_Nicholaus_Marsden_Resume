@@ -14,12 +14,9 @@ export const Technical: React.FC<{}> = (props) => {
                     <SkillOutline>
                         {/* <SubTitle variant='h6'>Core Technologies:</SubTitle> */}
                         <SecondarySkillGroup>
-                            {PRIMARY_SKILLS.map((skill, index) => (
+                            {PRIMARY_SKILLS.map((skill) => (
                                 <SkillStyle key={skill.subject}>
-                                    {
-                                        index === PRIMARY_SKILLS.length -1 ? <SubjectStyle>{skill.subject} </SubjectStyle> : <SubjectStyle>{skill.subject},&nbsp;</SubjectStyle>
-                                    }
-                                    {/* <SubjectStyle>{skill.subject}, </SubjectStyle> */}
+                                    <SubjectStyle>{skill.subject}</SubjectStyle>
                                 </SkillStyle>
                             ))}
                         </SecondarySkillGroup>

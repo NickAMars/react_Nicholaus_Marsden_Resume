@@ -19,7 +19,7 @@ export const ContactInfo : React.FC<{}> = (props) => {
         </GroupContentStyle>
         <GroupContentStyle>
             <LabelStyle>E-mail:</LabelStyle>
-            <ParagraphStyle>Nicholausmarsden.career1@gmail.com</ParagraphStyle>
+            <ParagraphStyle>nicholausa.marsden@gmail.com</ParagraphStyle>
         </GroupContentStyle>
     </ContactInfoContainer>
   )

@@ -29,10 +29,11 @@ const PrimaryHeader = styled(Typography)`
 `;
 const ProfileImage = styled.img`
   width: 100%;
-  clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
-  margin: 1.5rem 0;
+  border-radius: 12px;
+  margin: 1.5rem 1rem;
   height: 35%;
   object-fit: cover;
+  width: calc(100% - 2rem);
 `;
 const SubText = styled(Typography)`
   font-size: 1.5rem;
@@ -76,7 +77,7 @@ export const SideBar: React.FC<{}> = (props) => {
       <SideBarStyle>
         <HeaderContainer>
           <PrimaryHeader variant="h4">Nicholaus Marsden</PrimaryHeader>
-          <SubText variant="h6" >Software Engineer</SubText>
+          <SubText variant="h6" >Senior Software Engineer</SubText>
         </HeaderContainer>
         <ProfileImage loading="lazy" src={Work} alt="Personal" />
         <TimeLine />

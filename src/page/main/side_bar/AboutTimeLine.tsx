@@ -33,7 +33,7 @@ export const TimeLine: React.FC<{}> = (props) => {
           <DotStyle variant="outlined" color="primary" />
           <DotLineConnector />
         </TimelineSeparator>
-        <TimelineContentStyle><Description variant="subtitle1" ><b>Email:</b>Nicholausmarsden.career1@gmail.com</Description></TimelineContentStyle>
+        <TimelineContentStyle><Description variant="subtitle1" ><b>Email:</b>nicholausa.marsden@gmail.com</Description></TimelineContentStyle>
       </TimelineItemStyle>
       <TimelineItemStyle>
         <TimelineSeparator>

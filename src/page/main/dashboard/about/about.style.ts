@@ -34,6 +34,18 @@ const SkillContainer = styled.div`
     margin-top: 0.5rem;
 `
 const SkillStyle = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 3.5rem;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background-color: #e2e8f0;
+    }
 `
 const SkillOutline = styled.div`
     padding: 0 .4rem;
@@ -42,11 +54,13 @@ const SkillOutline = styled.div`
 const SecondarySkillGroup = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 0.2rem;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
 `
 const SubjectStyle = styled(Typography)`
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #334155;
+    font-weight: 600;
 `
 
 

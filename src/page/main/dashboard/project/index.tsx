@@ -17,11 +17,8 @@ export const Project: React.FC<{}> = (props) => {
                 <Item href="https://closed-eyes.surge.sh/" target="_blank">
                     <ProjectTitle variant="h5">One Piece Website</ProjectTitle>
                     <ProjectImage   loading="lazy"  src={ONE_PIECE_IMG} alt="one piece"/>
-                    <ProjectDescription variant="body1">                    
-                    </ProjectDescription>
                     <ProjectDescription variant="body1">
-                       This website was build to test my skills with html, css and javascript.
-                        Made the website responsive, optimize the image with media queries and check for support of browser.
+                       Built to test my skills with HTML, CSS, and JavaScript. Made the website responsive, optimized images with media queries, and checked for cross-browser support.
                     </ProjectDescription>
                 </Item>
             </Grid>
@@ -29,10 +26,8 @@ export const Project: React.FC<{}> = (props) => {
                 <Item href="https://cricket-mock.surge.sh/" target="_blank">
                     <ProjectTitle variant="h5">Cricket Website Re-create</ProjectTitle>
                     <ProjectImage  loading="lazy" src={CRICKET_WEBSITE} alt="cricket website"/>
-                    <ProjectDescription variant="body1">                    
-                    </ProjectDescription>
                     <ProjectDescription variant="body1">
-                      Create a imitation cricket website within three days before joining cricket.  
+                      Created an imitation cricket website within three days before joining Cricket Wireless.
                     </ProjectDescription>
                 </Item>
             </Grid>

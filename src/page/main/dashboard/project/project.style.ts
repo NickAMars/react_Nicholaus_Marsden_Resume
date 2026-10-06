@@ -7,7 +7,7 @@ const Item = styled.a`
     flex-direction: column;
     text-decoration: none;
     border-radius: 12px;
-    min-height: 300px;
+    height: 35rem;
     overflow: hidden;
     border: 1px solid #e2e8f0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -18,8 +18,9 @@ const Item = styled.a`
 `
 
 const ProjectImage = styled.img`
-    height: 25rem;
+    height: 28rem;
     object-fit: cover;
+    flex-shrink: 0;
 `
 const ProjectTitle = styled(Typography)`
     font-weight: 800;
