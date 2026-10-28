@@ -10,7 +10,7 @@ export const ContactInfo : React.FC<{}> = (props) => {
         </GroupContentStyle>
         <GroupContentStyle>
             <LabelStyle>Phone:</LabelStyle>
-            <ParagraphStyle>+1 470-288-2317</ParagraphStyle>
+            <ParagraphStyle>+1 470-440-4512</ParagraphStyle>
         </GroupContentStyle>
         <GroupContentStyle>
             <LabelStyle>Job:</LabelStyle>
