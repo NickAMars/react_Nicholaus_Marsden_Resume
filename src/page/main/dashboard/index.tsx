@@ -16,6 +16,8 @@ const DashboardStyle = styled.main`
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   position: relative;
   z-index: 100;
+  flex: 1;
+  min-height: 0;
 `;
 
 const About = lazy(() => import('./about').then(module => ({ default: module.About})));

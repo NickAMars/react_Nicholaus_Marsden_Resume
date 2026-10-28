@@ -9,9 +9,10 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 #root {
-  height: inherit;
+  height: 100%;
   font-size: 1rem;
 }
 

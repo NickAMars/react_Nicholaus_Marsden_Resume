@@ -5,8 +5,7 @@ import styled from "styled-components";
 
 const FooterStyle = styled.section`
     height: 3.5rem;
-    position: absolute;
-    bottom: 0;
+    flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
