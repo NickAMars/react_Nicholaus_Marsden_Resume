@@ -1,6 +1,5 @@
-import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const HeaderStyle = styled.nav`
@@ -25,18 +24,6 @@ const NavItem = styled.li`
   align-items: center;
   height: inherit;
 `
-const NavButton = styled(Button)`
-  display: flex;
-  align-items: center;
-  height: inherit;
-  border-radius: 8px;
-  &:hover {
-    background-color: rgba(37, 99, 235, 0.06);
-  }
-  @media only screen and (max-width: 47em){
-    width: 90px;
-  }
-`
 const NavLink = styled(Link)`
   display: flex;
   align-items: center;
@@ -46,11 +33,21 @@ const NavLink = styled(Link)`
   border-radius: 8px;
   font-weight: 600;
   color: #334155;
-  transition: color .3s ease;
+  transition: color .3s ease, background-color .3s ease;
   padding-left: 2rem;
   padding-right: 2rem;
   &:hover {
     color: ${(props)=> props.theme.palette.primary.main};
+    background-color: rgba(37, 99, 235, 0.06);
+  }
+  &:focus-visible {
+    outline: 2px solid ${(props)=> props.theme.palette.primary.main};
+    outline-offset: -2px;
+    background-color: rgba(37, 99, 235, 0.06);
+  }
+  @media only screen and (max-width: 47em){
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 `
 const HomeLink = styled(Link)`
@@ -73,6 +70,5 @@ export {
     NavList,
     NavItem,
     NavLink,
-    NavButton,
     HomeLink
 }
