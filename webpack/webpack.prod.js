@@ -11,7 +11,7 @@ module.exports = merge( commonConfig, {
     },
     plugins: [
         new HtmlWebpackPlugin({
-          favicon: false,
+          favicon: path.resolve(__dirname, "..", "src/assets/Nicholaus_Marsden.png"),
           template: path.resolve(__dirname, "..", "public/index.html"),
           minify: {
             removeComments: true

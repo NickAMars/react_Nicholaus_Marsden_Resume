@@ -1,12 +1,12 @@
 import { Typography } from '@mui/material';
 import { HeaderStyle, HomeLink, NavItem, NavLink, NavList } from './header.style'
-import Home from '@assets/home3.svg'
+import NMLogo from '@assets/Nicholaus_Marsden.png';
 
 export const Header: React.FC<{}> = (props) => {
     return (
       <HeaderStyle>
           <HomeLink to="/">
-            <Home fill="#000"/>
+            <img src={NMLogo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="NM Logo"/>
           </HomeLink>
           <NavList>
             <NavItem>
