@@ -12,7 +12,7 @@ export const PRIMARY_SKILLS = [
     {subject:"Jest", rank: 5},
     {subject:"Playwright", rank: 4},
     {subject:"Webpack", rank: 4},
-    {subject:"IBM Carbon Design System", rank: 4},
+    {subject:"IBM Carbon Design", rank: 4},
     {subject:"Claude Code", rank: 4},
     {subject:"HTML", rank: 5}, 
     {subject:"CSS", rank: 5},
@@ -29,10 +29,5 @@ export const educations = [
         name: "University of Arkansas",
         year: "May 2019",
         major: "Bachelor's of Computer Engineering"
-    },
-    {
-        name: "Los Angeles Valley College",
-        year: "June 2016",
-        major: "Associates of Physics"
     }
 ];
