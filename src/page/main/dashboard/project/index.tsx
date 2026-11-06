@@ -19,7 +19,7 @@ export const Project: React.FC<{}> = (props) => {
                     <ProjectTitle variant="h5">Pegasus Traders</ProjectTitle>
                     <ProjectImage loading="lazy" src={PEGASUS_TRADERS} alt="pegasus traders"/>
                     <ProjectDescription variant="body1">
-                      E-commerce storefront for a Jamaican retailer specializing in renewable energy solutions. Features product browsing, dark/light theme toggle, and structured data for SEO.
+                      Full e-commerce platform for a Jamaican renewable-energy retailer, built with React, TypeScript, MobX and Node. Checkout with online, in-office and payment-plan options; an admin dashboard with live order notifications, sales analytics, scheduled sales and coupons; deployed on AWS Fargate with RDS Postgres.
                     </ProjectDescription>
                 </Item>
             </Grid>

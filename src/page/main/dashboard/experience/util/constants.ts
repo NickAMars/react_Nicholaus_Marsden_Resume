@@ -8,11 +8,11 @@ enum COMPANIES {
 }
 export const JOB_EXPERIENCE = [
     {Company:COMPANIES.COB, JobTitle: "Senior Software Engineer", Location: "REMOTE" ,Years: "July 2024 - Present"}, 
-    {Company:COMPANIES.CWN, JobTitle: "Full Stack Engineer", Location: "Atlanta, GA (HYBRID)" ,Years: "Feb 2024 - June 2024"}, 
+    {Company:COMPANIES.CWN, JobTitle: "Full Stack Engineer", Location: "Atlanta, GA (HYBRID)" ,Years: "Feb 2024 - July 2024"}, 
     {Company:COMPANIES.UOR, JobTitle: "Senior Software Engineer", Location: "REMOTE" ,Years: "Aug 2023 - Feb 2024"}, 
     {Company:COMPANIES.IBM, JobTitle: "Software Engineer", Location: "REMOTE" ,Years: "Feb 2022 -  Aug 2023"}, 
     {Company:COMPANIES.SBD, JobTitle: "Software Engineer", Location: "REMOTE" ,Years: "Oct 2020 - Feb 2022"}, 
-    {Company:COMPANIES.ITG, JobTitle: "Full Stack Developer", Location: "Piscataway, NJ" ,Years: "June 2018 - Oct 2020"}, 
+    {Company:COMPANIES.ITG, JobTitle: "Full Stack Developer", Location: "Piscataway, NJ" ,Years: "June 2019 - Oct 2020"}, 
 ]
 export const DESCRIBE_EXPEIENCE = {
     [COMPANIES.COB]: "Capital One is a financial services corporation specializing in consumer credit, retail banking, and risk management solutions. Worked as a Senior Software Engineer developing a risk management system from inception through production.",
@@ -25,26 +25,31 @@ export const DESCRIBE_EXPEIENCE = {
 
 export const COMPANIES_POINTS = {
     [COMPANIES.COB]: [
-        "Built and owned a risk management system used by internal teams to evaluate and manage consumer credit risk.",
-        "Identified and resolved performance bottlenecks across caching, service communication, and database access to improve system stability and responsiveness."
+        "Architected modular, reusable front-end components and Angular 18+/NgRx SPAs, enabling rapid delivery of new product variations on a shared platform.",
+        "Designed and scaled enterprise platforms unifying resource and risk management workflows used across 10 business teams.",
+        "Owned end-to-end performance and reliability; introduced observability and distributed tracing with Splunk and CloudWatch, improving overall system performance by 25%.",
+        "Built Fastify/Node.js REST APIs on AWS Lambda with PostgreSQL, improving data-access performance by 20%.",
+        "Building Playwright end-to-end test suites and integrating Claude Code into daily development workflows to speed up delivery."
     ],
     [COMPANIES.CWN]: [
-        "Developed and maintained customer-facing features across multiple web applications serving 40K+ daily users.",
-        "Improved development speed and application stability by modernizing legacy code and expanding automated test coverage."
+        "Led migration of a legacy vanilla JavaScript codebase to React 18/TypeScript, cutting feature delivery time by 20-30%.",
+        "Built customer-facing wearable features across 15+ pages serving 40K+ daily users.",
+        "Expanded automated test coverage with Jest and Cypress and delivered WCAG-compliant accessibility, reducing production defects."
     ],
     [COMPANIES.UOR]: [
-        "Built application features supporting guest experiences, ticketing, and group-based services for high-traffic consumer platforms.",
-        "Worked closely with product and design teams to improve usability, performance, and reliability across customer-facing applications."
+        "Built Node.js integrations powering React 17 and Angular 15 guest-facing apps with consistent API contracts.",
+        "Built an event-driven Kafka processor with Node.js and Azure, scaling ticket throughput to 150+ per second during peak traffic."
     ],
     [COMPANIES.IBM]: [
-        "Developed enterprise incentive and claims management features as part of a large-scale modernization initiative.",
-        "Led migration of tens of thousands of enterprise records to next-generation systems, implementing approval and workflow logic used across partner ecosystems."
+        "Delivered core React 17+ platform features for a $3B ecosystem modernization initiative on a Spring Boot/Kubernetes microservices backend.",
+        "Built dynamic forms, filters, and role-based permissions in React with IBM Carbon Design System, making complex incentive workflows accessible to non-technical partners.",
+        "Led migration of 90K+ enterprise opportunities to next-generation incentive systems with automated TypeScript/Node.js pipelines."
     ],
     [COMPANIES.SBD]: [
-        "Built a manufacturing analytics platform to improve operational visibility and streamline claims processing workflows.",
-        "Designed and maintained data models and APIs supporting large-scale data collection and reporting."
+        "Built a manufacturing analytics platform with React 17 and Node.js (plus legacy Vue.js components) and MSSQL, improving visibility and claims processing.",
+        "Designed SQL data models and Node.js APIs supporting data collection and processing workflows."
     ],
     [COMPANIES.ITG]: [
-        "Developed internal management and multi-tenant applications supporting employee tracking and enterprise workflows."
+        "Delivered internal and multi-tenant apps with React 16, Angular, and Node.js, including employee tracking, security, and role-based access."
     ]
 }
