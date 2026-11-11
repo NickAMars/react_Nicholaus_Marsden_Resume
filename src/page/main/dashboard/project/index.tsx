@@ -4,6 +4,7 @@ import { Item, ProjectImage, ProjectTitle, ProjectDescription } from './project.
 import ONE_PIECE_IMG from '@assets/one_piece.png';
 import CRICKET_WEBSITE from '@assets/cricket_website.png';
 import PEGASUS_TRADERS from '@assets/pegasus_traders.png';
+import REMEMBER from '@assets/remember.png';
 import styled from 'styled-components';
 
 const ProjectContainer = styled(Box)`
@@ -20,6 +21,15 @@ export const Project: React.FC<{}> = (props) => {
                     <ProjectImage loading="lazy" src={PEGASUS_TRADERS} alt="pegasus traders"/>
                     <ProjectDescription variant="body1">
                       Full e-commerce platform for a Jamaican renewable-energy retailer, built with React, TypeScript, MobX and Node. Checkout with online, in-office and payment-plan options; an admin dashboard with live order notifications, sales analytics, scheduled sales and coupons; deployed on AWS Fargate with RDS Postgres.
+                    </ProjectDescription>
+                </Item>
+            </Grid>
+            <Grid item xs={6}>
+                <Item href="https://remember-s6cx.onrender.com" target="_blank">
+                    <ProjectTitle variant="h5">Remember</ProjectTitle>
+                    <ProjectImage loading="lazy" src={REMEMBER} alt="remember"/>
+                    <ProjectDescription variant="body1">
+                      Flashcard study app for creating, organizing and quizzing on decks of Q&A cards. Features Excel/CSV upload, folder organization, quiz mode, D3.js progress charts and public deck sharing. Built with React, Redux, TypeScript, Express, TypeORM and PostgreSQL.
                     </ProjectDescription>
                 </Item>
             </Grid>
