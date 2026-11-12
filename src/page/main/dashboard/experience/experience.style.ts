@@ -16,6 +16,13 @@ const ExperienceContainer = styled.div`
     padding: 2.5rem 3rem;
     min-height: 75rem;
     gap: 0.5rem;
+    @media only screen and (max-width: 56.25em) {
+        padding: 2rem;
+        min-height: auto;
+    }
+    @media only screen and (max-width: 37.5em) {
+        padding: 1.5rem;
+    }
 `
 const JobStyle = styled.div`
     display: flex;
@@ -37,6 +44,10 @@ const CompanyContainer = styled.div`
     & > *:first-child{
         font-weight: 800;
         color: #1e293b;
+    }
+    @media only screen and (max-width: 37.5em) {
+        flex-direction: column;
+        gap: 0.2rem;
     }
 `
 const CompanyDetails = styled(Typography)`

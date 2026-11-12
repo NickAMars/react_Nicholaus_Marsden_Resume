@@ -9,6 +9,9 @@ const HeaderStyle = styled.nav`
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    @media only screen and (max-width: 37.5em) {
+      height: 5.5rem;
+    }
 `;
 
 const NavList = styled.ul`
@@ -49,6 +52,11 @@ const NavLink = styled(Link)`
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  @media only screen and (max-width: 37.5em){
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
 `
 const HomeLink = styled(Link)`
   display: flex;
@@ -62,6 +70,10 @@ const HomeLink = styled(Link)`
   }
   @media only screen and (max-width: 47em){
     width: auto;
+  }
+  @media only screen and (max-width: 37.5em){
+    width: 5.5rem;
+    min-width: 5.5rem;
   }
 `
 

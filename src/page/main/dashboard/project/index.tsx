@@ -1,21 +1,25 @@
 import { Box, Grid } from '@mui/material';
 import React from 'react';
 import { Item, ProjectImage, ProjectTitle, ProjectDescription } from './project.style';
-import ONE_PIECE_IMG from '@assets/one_piece.png';
+import ONE_PIECE_IMG from '@assets/one_piece.jpg';
 import CRICKET_WEBSITE from '@assets/cricket_website.png';
-import PEGASUS_TRADERS from '@assets/pegasus_traders.png';
-import REMEMBER from '@assets/remember.png';
+import PEGASUS_TRADERS from '@assets/pegasus_traders.jpg';
+import REMEMBER from '@assets/remember.jpg';
 import styled from 'styled-components';
 
 const ProjectContainer = styled(Box)`
   min-height: 75rem;
   padding: 1rem 1.5rem;
+  @media only screen and (max-width: 56.25em) {
+    min-height: auto;
+    padding: 1rem;
+  }
 `
 export const Project: React.FC<{}> = (props) => {
   return (
     <ProjectContainer >
         <Grid container sx={{ height: '100%' }} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
                 <Item href="https://pegasus-traders.nicholausamarsden.com/pegasus-traders" target="_blank">
                     <ProjectTitle variant="h5">Pegasus Traders</ProjectTitle>
                     <ProjectImage loading="lazy" src={PEGASUS_TRADERS} alt="pegasus traders"/>
@@ -24,7 +28,7 @@ export const Project: React.FC<{}> = (props) => {
                     </ProjectDescription>
                 </Item>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
                 <Item href="https://remember-s6cx.onrender.com" target="_blank">
                     <ProjectTitle variant="h5">Remember</ProjectTitle>
                     <ProjectImage loading="lazy" src={REMEMBER} alt="remember"/>
@@ -33,7 +37,7 @@ export const Project: React.FC<{}> = (props) => {
                     </ProjectDescription>
                 </Item>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
                 <Item href="https://cricket-mock.surge.sh/" target="_blank">
                     <ProjectTitle variant="h5">Cricket Website Re-create</ProjectTitle>
                     <ProjectImage  loading="lazy" src={CRICKET_WEBSITE} alt="cricket website"/>
@@ -42,7 +46,7 @@ export const Project: React.FC<{}> = (props) => {
                     </ProjectDescription>
                 </Item>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
                 <Item href="https://closed-eyes.surge.sh/" target="_blank">
                     <ProjectTitle variant="h5">One Piece Website</ProjectTitle>
                     <ProjectImage   loading="lazy"  src={ONE_PIECE_IMG} alt="one piece"/>

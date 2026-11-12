@@ -14,12 +14,30 @@ const SideBarStyle = styled.div`
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   overflow: hidden;
-  @media only screen and (max-width: 47em){
-    display: none;
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
   }
 `;
 const HeaderContainer = styled.div`
   padding: 1.5rem 1.5rem 0.5rem;
+  @media only screen and (max-width: 56.25em) {
+    padding: 0;
+  }
+`;
+const TimelineWrapper = styled.div`
+  @media only screen and (max-width: 56.25em) {
+    display: none;
+  }
 `;
 const PrimaryHeader = styled(Typography)`
   font-weight: 800;
@@ -34,6 +52,17 @@ const ProfileImage = styled.img`
   height: 35%;
   object-fit: cover;
   width: calc(100% - 2rem);
+  @media only screen and (max-width: 56.25em) {
+    width: 12rem;
+    height: 12rem;
+    margin: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  @media only screen and (max-width: 37.5em) {
+    width: 15rem;
+    height: 15rem;
+  }
 `;
 const SubText = styled(Typography)`
   font-size: 1.5rem;
@@ -80,7 +109,9 @@ export const SideBar: React.FC<{}> = (props) => {
           <SubText variant="h6" >Senior Software Engineer</SubText>
         </HeaderContainer>
         <ProfileImage loading="lazy" src={Work} alt="Personal" />
-        <TimeLine />
+        <TimelineWrapper>
+          <TimeLine />
+        </TimelineWrapper>
         <DownLoadButton
           variant="contained"
           color="primary"

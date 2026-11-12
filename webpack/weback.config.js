@@ -6,7 +6,8 @@ module.exports = {
     entry: path.resolve(__dirname, "..", "src", "index.tsx"),
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "..", "dist")
+        path: path.resolve(__dirname, "..", "dist"),
+        clean: true,
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".jsx", ".svg", ".jpg", "pdf"],
@@ -15,7 +16,7 @@ module.exports = {
         '@assets': path.resolve(__dirname, "..", 'src/assets'),
         '@mui/styled-engine': '@mui/styled-engine-sc'
       },
-  
+
     },
     devServer: {
         static: {
@@ -28,23 +29,29 @@ module.exports = {
     module: {
         rules: [
           {
-            test: /\.(scss|css)$/,
-            // exclude: /node_modules/,
-            use: ["style-loader", "css-loader", "sass-loader"],
-          },
-          {
             test: /\.(ts|js)x?$/,
             include: path.resolve(__dirname, "..", "src"),
             exclude: path.resolve(__dirname, "..", "node_modules"),
             use: "babel-loader"
           },
           {
-            test: /\.(png|jpg|gif|pdf)$/,
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images'
-            }
+            test: /\.(png|jpg|jpeg|gif)$/,
+            type: 'asset',
+            parser: {
+              dataUrlCondition: {
+                maxSize: 10 * 1024,
+              },
+            },
+            generator: {
+              filename: 'images/[name].[contenthash][ext]',
+            },
+          },
+          {
+            test: /\.pdf$/,
+            type: 'asset/resource',
+            generator: {
+              filename: 'assets/[name].[contenthash][ext]',
+            },
           },
           {
             test: /\.svg$/,
@@ -52,18 +59,38 @@ module.exports = {
           }
         ],
     },
-    // performance: {
-    //     hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
-    //     maxAssetSize: 244 * 1024, // Set your desired size limit in bytes
-    // },
     optimization: {
         usedExports: true,
+        runtimeChunk: 'single',
         splitChunks: {
           chunks: "all",
+          cacheGroups: {
+            mui: {
+              test: /[\\/]node_modules[\\/]@mui[\\/]/,
+              name: 'vendors-mui',
+              chunks: 'all',
+              priority: 20,
+            },
+            leaflet: {
+              test: /[\\/]node_modules[\\/](leaflet|react-leaflet)[\\/]/,
+              name: 'vendors-leaflet',
+              chunks: 'all',
+              priority: 20,
+            },
+            vendor: {
+              test: /[\\/]node_modules[\\/]/,
+              name: 'vendors',
+              chunks: 'all',
+              priority: 10,
+            },
+          },
         },
     },
     plugins: [
         new ForkTsCheckerWebpackPlugin(),
-        new CompressionPlugin(),
+        new CompressionPlugin({
+          test: /\.(js|css|html|svg)$/,
+          algorithm: 'gzip',
+        }),
     ]
 }

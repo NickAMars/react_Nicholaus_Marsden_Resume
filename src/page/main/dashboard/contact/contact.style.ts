@@ -8,14 +8,24 @@ const ContactContainer = styled.section`
     margin-top: 2rem;
     min-height: 75rem;
     padding: 0.5rem 2rem;
+    @media only screen and (max-width: 56.25em) {
+        min-height: auto;
+        padding: 0.5rem 1.5rem;
+    }
+    @media only screen and (max-width: 37.5em) {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+    }
 `
 const ContactDataContainer = styled.div`
     display: flex;
     height: 40rem;
     padding-bottom: 1rem;
     justify-content: space-around;
-    @media only screen and (max-width: 47em){
-      display: table;
+    @media only screen and (max-width: 56.25em) {
+      flex-direction: column;
+      height: auto;
+      gap: 2rem;
     }
 `
 const ContactInfoContainer = styled.div`
@@ -27,6 +37,9 @@ const ContactMapContainer = styled.div`
     flex-direction: column;
     height: 35rem;
     padding: 0.5rem;
+    @media only screen and (max-width: 37.5em) {
+        height: 25rem;
+    }
 `
 
 const ContactTitleHeader = styled(Typography)`
@@ -52,6 +65,9 @@ const ContactTextField = styled(TextField)`
   & input, & p, & label {
    font-size: 1.4rem;
   }
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+  }
 `;
 const ContactTextarea = styled(TextField)`
   width: 30rem;
@@ -59,6 +75,9 @@ const ContactTextarea = styled(TextField)`
   margin-bottom: 10px;
   & div textarea,  & p, & label {
    font-size: 1.4rem;
+  }
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
   }
 `;
 

@@ -7,6 +7,13 @@ const AboutContainer = styled.div`
     min-height: 75rem;
     padding: 2.5rem 3rem;
     gap: 1.5rem;
+    @media only screen and (max-width: 56.25em) {
+        padding: 2rem;
+        min-height: auto;
+    }
+    @media only screen and (max-width: 37.5em) {
+        padding: 1.5rem;
+    }
 `
 
 const Title = styled(Typography)`
@@ -46,6 +53,10 @@ const SkillStyle = styled.span`
     &:hover {
         background-color: #e2e8f0;
     }
+    @media only screen and (max-width: 37.5em) {
+        width: 12rem;
+        height: 3rem;
+    }
 `
 const SkillOutline = styled.div`
     padding: 0 .4rem;
@@ -74,6 +85,9 @@ const AcademicContainer = styled.div`
     border-bottom: 1px solid #e2e8f0;
     &:last-child {
         border-bottom: none;
+    }
+    @media only screen and (max-width: 37.5em) {
+        width: 100%;
     }
 `
 const Academic = styled.div`

@@ -15,12 +15,18 @@ const Item = styled.a`
         transform: translateY(-4px);
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
+    @media only screen and (max-width: 37.5em) {
+        height: auto;
+    }
 `
 
 const ProjectImage = styled.img`
     height: 28rem;
     object-fit: cover;
     flex-shrink: 0;
+    @media only screen and (max-width: 37.5em) {
+        height: 20rem;
+    }
 `
 const ProjectTitle = styled(Typography)`
     font-weight: 800;

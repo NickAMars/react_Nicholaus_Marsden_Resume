@@ -8,7 +8,15 @@ module.exports = merge( commonConfig, {
     devtool: "source-map",
     performance: {
         hints: false,
-        maxAssetSize: 244 * 1024, // Set your desired size limit in bytes
+        maxAssetSize: 244 * 1024,
+    },
+    module: {
+        rules: [
+          {
+            test: /\.(scss|css)$/,
+            use: ["style-loader", "css-loader", "sass-loader"],
+          },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({

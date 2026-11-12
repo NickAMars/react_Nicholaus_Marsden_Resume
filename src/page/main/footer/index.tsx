@@ -10,6 +10,9 @@ const FooterStyle = styled.section`
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    @media only screen and (max-width: 37.5em) {
+      justify-content: center;
+    }
 `;
 const ParagraphStyle = styled(Typography)`
   padding-right: 1.5rem;

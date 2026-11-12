@@ -18,6 +18,9 @@ const DashboardStyle = styled.main`
   z-index: 100;
   flex: 1;
   min-height: 0;
+  @media only screen and (max-width: 56.25em) {
+    min-height: auto;
+  }
 `;
 
 const About = lazy(() => import('./about').then(module => ({ default: module.About})));
